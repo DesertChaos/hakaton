@@ -1,12 +1,17 @@
 import telebot
 from telebot import types
 from ultralytics import YOLO
+from dotenv import load_dotenv
+import os
+
+# Загрузка переменных окружения из .env
+load_dotenv()
 
 # Загрузить модель
-model = YOLO("yolo11n.pt") # pretrained YOLO11n model
+model = YOLO("yolo11n.pt")  # pretrained YOLO11n model
 
-API_TOKEN = '7860794787:AAEeFPNAnl9kGVbXrkGEDYJZYXKSmzsMjyE'
-bot = telebot.TeleBot(API_TOKEN) # Ключ
+API_TOKEN = os.getenv('BOT_TOKEN')
+bot = telebot.TeleBot(API_TOKEN)  # Ключ
 
 def detect_objects(image_path):
   # Запуск инференса на изображении

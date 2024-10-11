@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Env files
+.env
+
+# PyTorch model files
+*.pt
+
+# Log files
+*.log
+
+# Ignore virtual environments
+venv/
+env/
+
+# Ignore system files
+*.DS_Store
+*.vscode/
+*.idea/
+
+# Node.js related (site theme)
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Package lock
+package-lock.json
