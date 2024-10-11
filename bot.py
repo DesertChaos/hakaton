@@ -5,7 +5,7 @@ from ultralytics import YOLO
 # Загрузить модель
 model = YOLO("yolo11n.pt") # pretrained YOLO11n model
 
-API_TOKEN = '7602626066:AAHKb0BWmiPral734oHGJeNWDDK4JBqlKjo'
+API_TOKEN = '7860794787:AAEeFPNAnl9kGVbXrkGEDYJZYXKSmzsMjyE'
 bot = telebot.TeleBot(API_TOKEN) # Ключ
 
 def detect_objects(image_path):
