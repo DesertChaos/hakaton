@@ -1,0 +1,258 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #14171C;
+    color: #14171C;
+}
+
+#theme-button {
+    position: fixed;
+    top: 100px;
+    left: 20px;
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+  #theme-button img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+
+/* Шапка */
+header {
+    display: flex;
+    justify-content: space-between; /* Раздвигает элементы */
+    align-items: center;
+    background-color: #14171C;
+    padding: 10px 20px;
+    height: 77px;
+}
+
+.logo-text {
+    opacity: 69%;
+    color: #fff; 
+    font-size: 18px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+nav ul li {
+    margin-left: 20px; /* Отступ между ссылками */
+}
+
+.lang-btn, .menu-btn {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+.lang-btn:hover, .menu-btn:hover {
+    opacity: 1;
+}
+
+/* Центрируем кнопку "Free Work" относительно заголовка */
+.buttons {
+    display: flex;
+    justify-content: center; /* Центрирует кнопку */
+    margin-top: 20px;
+}
+
+/* Увеличиваем кнопку и уменьшаем текст */
+.free-work-btn {
+    background-color: #292523;
+    color: #E9D3BB;
+    border-radius: 17px;
+    width: 231px;
+    height: 50px;
+    padding: 30px 60px; /* Увеличиваем размер кнопки */
+    font-size: 24px; /* Уменьшаем размер текста */
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.free-work-btn:hover {
+    background-color: #E9D3BB;
+    color: #292523;
+}
+
+
+/* Стили для главной страницы */
+.hero {
+    height: 554px;
+    background-image: linear-gradient(to bottom, #093E8C, #0F0F10);
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 100px;
+}
+
+.hero-content {
+    text-align: left;
+}
+
+.hero h1 {
+    font-size: 96px;
+    color: #00ADB5;
+}
+
+.hero p {
+    font-size: 20px;
+    padding-bottom: 10px;
+    opacity: 69%;
+    color: #fff;
+
+}
+
+
+.buttons {
+    margin-top: 20px;
+}
+
+
+.button {
+    background-color: #00ADB5;
+    color: #14171C;
+    border-radius: 17px;
+    padding: 10px 30px;
+    font-size: 18px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: #14171C;
+    color: #fff;
+}
+
+.hamster img {
+    max-width: 536px;
+    max-height: 564px;
+    position: absolute;
+    right: 50px;
+    top: 50px;
+}
+
+h2 {
+    padding: 25px;
+    font-size: 64px;
+    color: #00ADB5;
+    margin-bottom: 40px;
+}
+
+
+.about-project {
+    height: 600px;
+    background-image: linear-gradient(to bottom, #0F0F10, #093E8C);
+    padding: 50px 0;
+    text-align: left;
+    color: #00ADB5;
+}
+
+.about-us {
+    height: 600px;
+    background-image: linear-gradient(to bottom, #093E8C, #0F0F10);
+    padding: 50px 0;
+    text-align: right;
+    color: #00ADB5;
+}
+
+
+/* Footer */
+footer {
+    margin-top: 15px;
+    background-color: #14171C;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+.footer-links div a {
+    color: #BFBFBF;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+    text-decoration: none;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+  }
+  
+  .footer-links div a:hover {
+    opacity: 1;
+  }
+  
+  .telegram-link {
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+  }
+  
+  .telegram-link:hover {
+    opacity: 1;
+  }
+
+footer p {
+    color: #BFBFBF;
+    font-size: 12px;
+}
+
+footer p span {
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+
+.image-row {
+    display: flex;
+    justify-content: space-between; /* Равномерное распределение картинок */
+    max-width: 800px; /* Максимальная ширина ряда */
+    margin: 0 auto; /* Центрирование ряда на странице */
+    padding: 20px 0;
+}
+
+.image-item {
+    flex: 0 1 30%; /* Каждая картинка будет занимать 30% от ширины контейнера */
+    text-align: center;
+    margin: 0 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-item img {
+    width: 100%; /* Картинка будет адаптироваться под ширину контейнера */
+    height: auto;
+    display: block;
+}
+
+.image-item:hover {
+    transform: scale(1.1); /* Увеличение картинки при наведении */
+}
+
+.image-item p {
+    text-align: left;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #fff; /* Цвет текста */
+    opacity: 75%;
+}
